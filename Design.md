@@ -18,3 +18,7 @@ Scribe isn't about getting to the full text of a thing, it's about collecting se
 ## Project Setup & Workflow Creation Tool
 
 ## Datastore & API
+
+## Client Transcription Site
+
+## Project Admin Tool
