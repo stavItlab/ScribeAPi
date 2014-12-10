@@ -14,10 +14,11 @@ Scribe isn't about getting to the full text of a thing, it's about collecting se
 # Features
 
 # Components
-Scribe's architecture is deeply inspired by Zooniverse's [Panoptes](https://github.com/zooniverse/Panoptes/) / [Panoptes Frontend](https://github.com/zooniverse/Panoptes-Front-End/), their platform for self-service citizen science projects. Panoptes provides a point and click workflow design tool 
+Scribe's architecture is deeply inspired by Zooniverse's [Panoptes](https://github.com/zooniverse/Panoptes/) / [Panoptes Frontend](https://github.com/zooniverse/Panoptes-Front-End/), their platform for self-service citizen science projects. Panoptes will ultimately provide 
 
 
 ## Project Setup & Workflow Creation Tool
+This is the most TBD part of the application
 
 ## Datastore & API
 
@@ -25,3 +26,5 @@ Scribe's architecture is deeply inspired by Zooniverse's [Panoptes](https://gith
 * 100% Database-driven
 
 ## Project Admin Tool
+
+
