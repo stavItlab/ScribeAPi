@@ -8,17 +8,20 @@ Ken the Curator has an idea for a crowdsourcing project. He wants "The Crowd" to
 
 Ken the Curator looks at Scribe, realizes it's probably not for him.
 
-Scribe isn't about getting to the full text of a thing, it's about collecting selected elements
+Scribe isn't about getting to the full text of a thing, it's about collecting selected elements that are relevant in a structured form. This can be ultimately for the improvement of metadata, or to create new standalone data sets [UGH].
 
 
 # Features
 
 # Components
+Scribe's architecture is deeply inspired by Zooniverse's [Panoptes](https://github.com/zooniverse/Panoptes/) / [Panoptes Frontend](https://github.com/zooniverse/Panoptes-Front-End/), their platform for self-service citizen science projects. Panoptes provides a point and click workflow design tool 
+
 
 ## Project Setup & Workflow Creation Tool
 
 ## Datastore & API
 
 ## Client Transcription Site
+* 100% Database-driven
 
 ## Project Admin Tool
