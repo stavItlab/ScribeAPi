@@ -4,7 +4,8 @@ This will be where we document the development and design of the Scribe project.
 
 [[What is Scribe]]
 
-[[Scribe Projects]]
+[[Scribe Projects]] -- Overview
+* [[Emigrant Savings Bank]]
 
 [[Design]]
 
