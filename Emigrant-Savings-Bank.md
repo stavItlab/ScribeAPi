@@ -10,7 +10,7 @@ Extracting and structuring the building-level mortgage records from Emigrant Sav
 
 These include their mortgage and bond records: loans taken out (we suspect mostly by relatively new immigrants) to buy properties and to mortgage existing real estate; an essential step in moving up in New York's economic strata.
 
-We suspect building a keyword searchable, and structured index of names like this will have a tremendous appeal to genealogists
+We suspect building a keyword searchable, and structured index of names like this will have a tremendous appeal to genealogists for transcription, provide a new source of material for historians, and provide NYPL with useful location data for the NYC Space/†ime directory.
 
 The collection belongs to Manuscripts and Archives, but the primary users are the Milstein Collection (coincidentally, the Milstein family owns Emigrant Savings Bank today).
 
