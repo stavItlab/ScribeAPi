@@ -14,6 +14,14 @@ We suspect building a keyword searchable, and structured index of names like thi
 
 The collection belongs to Manuscripts and Archives, but the primary users are the Milstein Collection (coincidentally, the Milstein family owns Emigrant Savings Bank today).
 
+
+
+As the finding aid describes these real estate materials:
+> The Bond and Mortgage Books and Bond and Mortgage Ledgers record real estate transactions and have their own numbers which can be found in the Bond and Mortgage Name Index. The entries in the Bond and Mortgage Books include the date of approval, name of mortgagor, house number, size of the ground, description of the building, the amount of the loan, the name of the attorney, and in most cases a drawing of the location on a block map. There are also five Real Estate Loans Ledgers pertaining to the years 1902 to 1923. Information to be found in the Real Estate Loans Ledgers include the applicant’s name, the amount of money requested (at 5% interest) location of ground and building, material the building is to be made of, and the number of floors.
+
+There are about 12,600 mortgages in the 10 reels that make up the Bond and Mortgage holdings.
+
+
 ## Data Fields
 * Date
 * Location (geolocated)
@@ -37,4 +45,6 @@ TK
 
 # Project Logistics
 ## Digitization
-The entire collection has been microfilmed and is on 
+The entire collection has been microfilmed and has a [tremendously detailed finding aid](http://archives.nypl.org/uploads/collection/pdf_finding_aid/emigrant.pdf).
+
+
