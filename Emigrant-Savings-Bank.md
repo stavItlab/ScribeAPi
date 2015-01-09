@@ -62,6 +62,7 @@ TK
 * Unreadable elements
 * Almost all are located in Manhattan. However some aren't (Morsitania example)
 * Some have images pasted over elements. Capture them? But also obscured elements (Morisitania example)
+* Certain books have different templates. Do we want to anticipate that and know ahead of time? How do we specify these in the metadata? Should there be a way to do this kind of determination we provide for our users?
 
 
 # Project Logistics
