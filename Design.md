@@ -12,9 +12,21 @@ Scribe isn't about getting to the full text of a thing, it's about collecting se
 
 
 # Features
+* Framework for image-based crowdsourcing of text extraction tasks
+* Workflow for designing transcription tasks
+* Multi-stage workflows so users don't have to do all work in a single pass
+* A library of combinable widgets for structuring transcription workflows
+* User accounts [Based on third party account authentication]
+
+
+## Doesn't provide
+* Image hosting
+* User authentication (to be provided by a third party such as Zooniverse Login or [OmniAuth](http://intridea.github.io/omniauth/))
+* User Discussion Service (to be provided by a third party such as [Zooniverse Talk](https://github.com/zooniverse/Talk) or [Discourse](http://www.discourse.org/))
 
 # Components
-Scribe's architecture is deeply inspired by Zooniverse's [Panoptes](https://github.com/zooniverse/Panoptes/) / [Panoptes Frontend](https://github.com/zooniverse/Panoptes-Front-End/), their platform for self-service citizen science projects. Panoptes will ultimately provide 
+
+Scribe's architecture is deeply inspired by Zooniverse's [Panoptes](https://github.com/zooniverse/Panoptes/) / [Panoptes Frontend](https://github.com/zooniverse/Panoptes-Front-End/), their platform for self-service citizen science projects.
 
 
 ## Project Setup & Workflow Creation Tool
