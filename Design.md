@@ -32,7 +32,27 @@ Scribe's architecture is deeply inspired by Zooniverse's [Panoptes](https://gith
 ## Project Setup & Workflow Creation Tool
 _NOTE: This is the most TBD part of the application_
 
-Each Project is broken down into "Tasks", the individual stages an "asset" (the image) goes through to be structured with Scribe. Tasks are "[Composable](http://en.wikipedia.org/wiki/Composability)" – the output from one task can be used to drive the input of the next task (or series of tasks). That said, many Scribe projects are likely to only have one kind of Task (e.g. back to our Menus example, transcribing the name and price of a dish on a menu).
+A Scribe project starts with an idea: "I have a stack of images, and I'd like to get some data out of the text they contain, but there's too many of for me to go through on my own."
+
+A scribe project starts as a stack of organized images, called **subjects**. Each *subject* is part of a *grouping*, which can be part of a *collection*.
+
+Think of it in terms of Zooniverse's data model for [Old Weather](https://oldweather.org), which is about transcribing historical ships logs for climate data:
+<table>
+<tr>
+<th>Classification</th> <th>Example</th>
+</tr>
+<tr>
+<td>Collection</td> <td>WWI</td>
+</tr>
+<tr>
+<td>Grouping</td> <td>Ship (e.g. Jamestown (1876))</td>
+</tr>
+<tr>
+<td>Subject</td> <td>Pages of ship logs (ordered by date)</td>
+</tr>
+</table>
+
+When a user comes to your Scribe project and starts working, they'll 
 
 
 
