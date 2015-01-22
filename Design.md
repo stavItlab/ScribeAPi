@@ -8,7 +8,7 @@ Ken the Curator has an idea for a crowdsourcing project. He wants "The Crowd" to
 
 Ken the Curator looks at Scribe, realizes it's probably not for him.
 
-Scribe isn't about getting to the full text of a thing, it's about collecting selected elements that are relevant in a structured form. This can be ultimately for the improvement of metadata, or to create new standalone data sets [UGH].
+Scribe isn't about getting to the full text of a thing, it's about collecting selected elements that are relevant in a structured form. This can be ultimately for the improvement of metadata, or to create new standalone data sets compiled from across a corpus of materials.
 
 
 # Features
