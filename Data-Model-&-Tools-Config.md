@@ -22,7 +22,7 @@ The enables_workflows object specifies for each workflow key a simple specificat
 ## Task
 * `key`: String - Workflow-unique alphanumeric (e.g. '0','1','mark_one')
 * `type`: Enum "text","integer","date" - Seems to include these basic data types but also things like "drawing", "textBlock". Seems like `type` could refer to data type desired (e.g. string, date, int, float, bounding box, point, polygon) but may in current practice be used to hint at tool (e.g. pick_page_type, textBlock).
-* `directions`: Text - Friendly prompt given to user (e.g. "Categorize the type of document")
+* `directions`: Text - Friendly prompt given to user, which contextualizes task (e.g. "How many penguins are there?", "What color is this penguin?", "Choose the type of document") **[This is sometimes given as 'instruction']**
 * `field_name`: String - Another alphanumeric workflow-unique id like 'key' above? **[Verify]**
 * `tool`: String - Identifies tool to show. Note that there are distinct tools for mark and transcribe workflows. **[This is sometimes given as `tools`]***
 * `options`: Hash - Specify arbitrary tool options. See "Tools" 
