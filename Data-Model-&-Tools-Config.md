@@ -69,7 +69,7 @@ Tools are pluggable, configurable widgets that perform a single, simple task rel
 
 **[Note that this gets pretty speculative. This is an attempt to formalize the conventions I see arising in the code.]**
 
-## Core Tools
+## Core Tools **[proposed designation]**
 Certain tools (e.g. 'pick_one') are "core tools", meaning they may appear in either the Transcribe or Mark workflows. Core tools are defined internally. **[Maybe better placed in components/core-tools or something?]** (If a tool isn't a core tool, it can be found in either components/mark or components/transcribe depending on the workflow in which it appears.)
 
 ### Pick One
@@ -78,7 +78,7 @@ Pick One is a simple tool that presents two or more optional tasks. This is curr
    * `label`: Friendly label of option (e.g. "This looks like a Casualty Form...", "This looks like an attestation..")
    * `task`: Key of TASK to jump to if user clicks this option
 
-### Pick Multiple
+### Pick Multiple **[proposed]**
 Like Pick One, but allows user to return to the picker after completing a given option so that other tools can be used. This is used anytime there are multiple tools that may be relevant for a document, but they're not mutually exclusive; Multiple tools may be applied.
 
 ## Marking Tools
@@ -88,7 +88,7 @@ All marking tools generate the following common metadata fields (in addition to 
  * `x`: Integer - Pixel coordinate within parent subject
  * `y`: Integer - Pixel coordinate within parent subject
 
-All marking tools accept the following options (in addition to tool specific options noted below):
+**[Proposed]** All marking tools accept the following options (in addition to tool specific options noted below):
 
  * `fill_color`: String - CSS color. (Default "rgba(0,0,0,0.30)")
  * `stroke_color`: String - CSS color. (Default "#fff")
@@ -122,9 +122,11 @@ Options:
 
 ## Transcribe Tools
 Transcribe tools are widgets suitable for gathering specific types of data with configurable constraints.
+
 ### Transcribe Row Tool
 At writing, this tool presents multiple forms - one for each transcribe task. Each form contains a single field styled based on the task type property. 
-### Text Tool
+
+### Text Tool  **[proposed]**
 Probably the simplest tool, the text tool presents a single text input. The tool can be augmented with options below.
 
 Options:
@@ -154,28 +156,28 @@ transcribe_workflow = {
     "project":           ...
 }
 ```
-### Number Tool
+### Number Tool  **[proposed]**
 An extension of the Text Tool (perhaps using `match` option to restrict characters like "^-?\d+([,.]\d+)?$")
  * `minimum`: Integer/Float
  * `maximum`: Integer/Float
 
-### Select Tool
+### Select Tool  **[proposed]**
 Useful when expected values are few, presents valid options as a list, optionally with a manual entry. Options include:
  * `options`: Array of string values
  * `allow_other`: Boolean - If true, final option will be "Other..." and will allow manual entry
  * `multiselect`: Boolean - If true, multiple values can be selected.
 
-### Boolean Tool
+### Boolean Tool  **[proposed]**
 Really just a shorthand for the Select Tool with `options` = ["Yes", "No"]
 
-### Date Tool
+### Date Tool  **[proposed]**
 A date (and date range) picker that supports approximates dates and pre-1970 dates.
 * `minimum`: String - ISO 8601 date string establishing oldest allowed date (e.g. "-30000101" for 3000 BCE)
 * `maximum`: String - ISO 8601 date string establishing maximum allowed date (e.g. "20150227")
 * `range`: Boolean - If true, a date range may be selected
 * `allow_approximate`: Boolean - If true, user may check a box to indicate date is approximate.
 
-### Composite Tool
+### Composite Tool  **[proposed]**
 A composite tool is a tool composed of two or more basic tools. A composite tool presents multiple tools side by side for cases where the mark being considered contains multiple distinct data that are confusing to consider in isolation. Options include:
  * `tools`: Array of tool configurations from those listed above.
 
