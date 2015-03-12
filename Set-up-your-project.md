@@ -29,7 +29,7 @@ var project = Project.create({
   producer: 'Zooniverse/NYPL',
   title: 'Whale Tales',
   description: 'The world\'s largest whaling library has been digitized.',
-  home_page_content: '&lt;h1&gt;Whale Tales&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;',
+  home_page_content: '<h1>Whale Tales</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>',
   summary: 'Transcribe ship logs from the New Bedford Whaling Museum',
   organizations: [
     {
@@ -237,11 +237,11 @@ var pages = [
   {
     name: 'science',
     title: 'Science Page',
-    content: '&lt;h1&gt;Science Page&lt;/h1&gt;&lt;p&gt;I am a science!&lt;/p&gt;'
+    content: '<h1>Science Page</h1><p>I am a science!</p>'
   },{
     name: 'about',
     title: 'About Us',
-    content: '&lt;h1&gt;About Us&lt;/h1&gt;&lt;p&gt;This is the about page.&lt;/p&gt;'
+    content: '<h1>About Us</h1><p>This is the about page.</p>'
   }
 ]
 ```
