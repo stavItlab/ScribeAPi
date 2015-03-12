@@ -24,7 +24,8 @@ Typically, the only thing you'll need to do after preparing your images and sett
 
 First, create a new project by entering your details in the project object. For example:
 
-```var project = Project.create({
+```javascript
+var project = Project.create({
   producer: 'Zooniverse/NYPL',
   title: 'Whale Tales',
   description: 'The world\'s largest whaling library has been digitized.',
@@ -47,7 +48,8 @@ First, create a new project by entering your details in the project object. For 
     }
   ],
   background: ''
-})```
+})
+```
 
 ### Define tasks
 
@@ -63,7 +65,8 @@ You can create a new task by creating an object with the following parameters:
 
 #### Example task objects
 
-```var transcribe_tasks = {
+```javascript
+var transcribe_tasks = {
   journal_date: {
     key: 0,
     tool: 'singleDate',
@@ -88,7 +91,8 @@ You can create a new task by creating an object with the following parameters:
     instruction: 'Type something, anything.',
     next_task: nil
   }
-};```
+};
+```
 
 ### Define workflows
 
@@ -105,7 +109,8 @@ You can create a new workflow by creating an object with the following parameter
 
 #### Example workflow object
 
-```var transcribe_workflow = Workflow.create(
+```javascript
+var transcribe_workflow = Workflow.create(
   {
     name: 'transcribe',
     label: 'Transcribe Workflow',
@@ -114,7 +119,8 @@ You can create a new workflow by creating an object with the following parameter
     enables_workflows: {},
     project: project
   }
-);```
+);
+```
 
 ### Define assets path
 
@@ -226,7 +232,8 @@ You can add custom pages directly in your configuration file. Simply create an a
 
 #### Example page objects
 
-```var pages = [
+```javascript
+var pages = [
   {
     name: 'science',
     title: 'Science Page',
@@ -236,7 +243,8 @@ You can add custom pages directly in your configuration file. Simply create an a
     title: 'About Us',
     content: '&lt;h1&gt;About Us&lt;/h1&gt;&lt;p&gt;This is the about page.&lt;/p&gt;'
   }
-]```
+]
+```
 
 ### Change the look and feel
 
