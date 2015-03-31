@@ -1,5 +1,6 @@
 # Data Model
 A first pass distillation of the Scribe data model as shared by ruby and js.
+
 ## Project
 The project is the top-level element defining project properties, site pages, and defining workflows. There SHOULD be only one project. It contains the following fields:
 * `description`: Text
@@ -50,6 +51,9 @@ A "primary" subject represents a single image. A "secondary" subject represents 
 * `random_no`: Float (0...1) - Generated on-save.
 * `order`: Int - Order within Group? **[Verify]**
 
+# SubjectSet
+A Subject always belongs to a single SubjectSet. Multi-page documents are represented by multiple subjects associated by a single subject-set. Fields include:
+
 ## Group
 Groups organize subjects into related sets. 
 
@@ -63,6 +67,7 @@ Group fields include:
 * `cover_image_url`: String - URL of group representative image
 * `external_url`: String - URL of another representation of this object (e.g. wikipedia) if avail
 * `meta_data`: Hash - Includes arbitrary known data imported from group CSVs that might be useful to display in transcription interface
+* `selection_method`: Enum "linear", "random" - Indicates method for selecting subject-sets from this group for marking, whether linearly or randomly.
 
 # Tools
 Tools are pluggable, configurable widgets that perform a single, simple task related to identifying an area of the subject ("marking"), adding data to a subject ("transcribing"), or moving the user from one tool to the next ("core"). 
@@ -75,11 +80,10 @@ Certain tools (e.g. 'pick_one') are "core tools", meaning they may appear in eit
 ### Pick One
 Pick One is a simple tool that presents two or more optional tasks. This is currently defined as a hash mapping keys (e.g. "history_sheet", "attestation") to sub-hashes with a single next_task key that indicates the task. It's unclear what label is used for the option. **[Proposed revision below]*** 
  * `options`: Array of hashes with following properties
-   * `label`: Friendly label of option (e.g. "This looks like a Casualty Form...", "This looks like an attestation..")
-   * `task`: Key of TASK to jump to if user clicks this option
+   * `label`: String - Friendly label of option (e.g. "This looks like a Casualty Form...", "This looks like an attestation..")
+   * `next_task`: String - Key of TASK to jump to if user clicks this option. (Alt names we've used include `leads_to`, `task`)
+   * `number_of_rounds`: Enum "many", "one" - Default "one". Indicates how many iterations of choices user may make. If "many" user can return to the picker after completing an option so that other options can be pursued. "Many" should be used anytime there are multiple potentially relevant tools to apply, for example multiple entities to identify.
 
-### Pick Multiple **[proposed]**
-Like Pick One, but allows user to return to the picker after completing a given option so that other tools can be used. This is used anytime there are multiple tools that may be relevant for a document, but they're not mutually exclusive; Multiple tools may be applied.
 
 ## Marking Tools
 Marking tools include various methods for identifying specific points and areas of images. They're defined in components/mark.
