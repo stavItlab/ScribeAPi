@@ -116,14 +116,66 @@ Too big, created separate page [here](Set-up-your-project).
 
 In terms of a web platform, crowdsourcing is a relatively new and evolving concept. Scribe is an even newer tool and is constantly evolving. As the creators of this tool, [Zooniverse](https://www.zooniverse.org/) and [NYPL Labs](http://www.nypl.org/collections/labs), we have been experimenting with crowdsourcing data from science to humanities projects alike. We'd like to share with you what we've learned so far.
 
-### The right task for the right audience
+### User Motivation
+_"I don't know *anyone* who would *actually* do this."_ –Hopefully not you
+
+"Crowdsourcing" is an immensely broad field of practice, but it generally boils down to bringing an interested, distributed group of people to solve an organization's directed problems.
+
+To create a successful crowdsourcing project, you not only need a well-organized set of tasks or challenges, you also need to find your "crowd".
+
+To create the tasks, there are Crowdsourced Innovation platforms designed to run distributed challenges, there are crowdsourced microtask frameworks like [PyBossa](http://pybossa.com/), and Scribe (oh hey, hi!). But what these don't solve are the "who" of crowdsourcing. They're tools that can help you design, build, and run a project, but they aren't designed to recruit the real people - friends, family, experts, amateurs, enthusiasts, passersby - who will be working _with_ you to make your project real.
+
+Often, this is solved in the commercial world with a very simple solution: money. Most crowdsourcing platforms marry a tool for creating crowdsourced tasks with a marketplace to pay people for performing individual tasks or large payouts for solving major challenges. As I write this, Amazon Mechanical Turk, one of the largest crowdsourcing marketplaces on the internet, is offering 276,274 "Human Intelligence Tasks" at a price between $0.00 (yes, nothing - this is a new feature), and $74.79 (for an urgent audio transcription). Most tasks are only a few cents ($0.01-$0.10) per activity. Studies have shown that the average hourly pay for someone performing these tasks is about [GAH FIND THAT STUDY].
+
+At Zooniverse and The New York Public Library, we take a very different approach to finding motivated users: we build projects that we think will actively excite people. We want them to be excited by the broad concept.
+
+Zooniverse puts its promise front and center:
+> We make citizen science websites so that everyone can be part of real research online
+No matter who you are, when you're participating in a Zooniverse project, you're actively doing real research. When you join one of its citizen science projects, you're acutely aware of how your participation is actively helping the underlying research project.
+
+From the moment you land on the homepage of a Zoonvierse project, you're presented with:
+* the core idea of the project
+* what material you'll be working with
+* a general sense of what you'll be doing
+
+And it's all delivered in a way that excites participants. Galaxy Zoo promises, "Few have witnessed what you're about to see. Experience a privileged glimpse of the distant universe as observed by the SDSS, the Hubble Space Telescope, and UKIRT... To understand how galaxies formed we need your help to classify them according to their shapes. If you're quick, you may even be the first person to see the galaxies you're asked to classify." It connects with astronomy and space enthusiasts. It's designed to speak to _someone_, in this case science enthusiasts, and space enthusiasts in particular.
+
+In business strategy speak, this is called the [value proposition](http://en.wikipedia.org/wiki/Value_proposition). What are you delivering for your users? What are they contributing to?
+
+This approach goes deeper than just the homepage.
+
+There are elements which will intersect with your the [design of the tasks](#task-design), [user acquisition and promotion](#promotion), and [long-term participant engagement](#engagement), but at the heart of your project you've got to ground it to the bigger goal you're trying to accomplish. What will transforming these documents into a dataset do, what will they enable, why should folks outside your organization get really excited about it? Providing a broader context for this to plug into is critical. 
+
+As you're conceptualizing your project, consider:
+* Who will actually do this?
+* Is there a community that this actively speaks to?
+ * How can I let them know that this effort exists, and gain their trust and interest to participate
+
+In terms of context-setting this means giving your project some character and flavor in the design, but also what you say. Who's behind it? How are they using the data? Whats the basis behind the science? Making these things clear from the start on the homepage, and then going into significant depth in informational sections of the site is critical. On the informational sections, don't be afraid to get geeky. Take the time to really explain the rationale behind the project, the significance of the work being processed (in many cases being seen by the public for the first time). Use it as an opportunity to turn enthusiasts into evangelists.
+
+
+#### Takeaways:
+* Know who your community is who will be participating in the site. Make it with an intended audience in mind.
+* Design the site so your value proposition is front and center. Your participants should immediately know why they're there, what they're doing, and what value will come from their efforts.
+
+
+### <a name="task-design"></a>The right task for the right audience
+
+
+
+Put yourself in the shoes of your participants 
+
+### Testing Your Project
 
 ### Launching a crowdsourcing project
 
-### Promoting your project
+### <a name="promotion"></a> Promoting your project
 
-### Engaging your audience
+
+### <a name ="engagement"></a>Engaging your audience
+
+### Consistently Testing and Improving Your Project
 
 ### Sharing your data and results
 
-
+### Going Further
