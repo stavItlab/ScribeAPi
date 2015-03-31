@@ -53,9 +53,11 @@ A "primary" subject represents a single image. A "secondary" subject represents 
 
 # SubjectSet
 A Subject always belongs to a single SubjectSet. Multi-page documents are represented by multiple subjects associated by a single subject-set. Fields include:
+* `name`: String
+* `subjects`: Many SUBJECTs
 
 ## Group
-Groups organize subjects into related sets. 
+Groups organize subject-sets into related collections.
 
 Note that although group membership and metadata may be helpful to the project maintainer and transcriber (if group metadata is displayed with member subjects) annotations are applied to subjects exclusively. It's not currently possible to annotate a group. 
 
@@ -68,6 +70,7 @@ Group fields include:
 * `external_url`: String - URL of another representation of this object (e.g. wikipedia) if avail
 * `meta_data`: Hash - Includes arbitrary known data imported from group CSVs that might be useful to display in transcription interface
 * `selection_method`: Enum "linear", "random" - Indicates method for selecting subject-sets from this group for marking, whether linearly or randomly.
+* `subject_sets`: Many SUBJECTSETs
 
 # Tools
 Tools are pluggable, configurable widgets that perform a single, simple task related to identifying an area of the subject ("marking"), adding data to a subject ("transcribing"), or moving the user from one tool to the next ("core"). 
